@@ -1,0 +1,47 @@
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    position: fixed;
+    transform: rotate(90deg);
+    top: 60%;
+    right: 55%;
+    
+}
+
+
+.social-links {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 20%;
+    
+    padding : .7rem;
+    border-radius: 8px;
+    
+    
+}
+
+.social-links a {
+    transform: rotate(-90deg);
+}
+
+.scroller {
+    position: absolute;
+    top: 0;
+    left: 110%;
+    background-color: var(--color-primary);
+    width: 1px;
+    height: 40px;
+    
+}
+
+.scroller:hover{
+    background-color: var(--color-white);
+}
+
+@media screen and (max-width: 900px) {
+    .socials{
+        display:none;
+    }
+}

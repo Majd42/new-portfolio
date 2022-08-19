@@ -1,0 +1,89 @@
+.experience {
+    margin-top :6rem;
+    position: relative;
+    opacity: 0;
+    
+}
+
+/* .title h2 {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--color-primary)
+}
+.title h4 {
+
+    text-align: center;
+    
+} */
+
+.title {
+    padding :1rem;
+}
+
+.skills {
+    
+    color: var(--color-white);
+    margin-top: 4rem;
+    background-color: var(--color-bg-variant);
+    padding: 4rem 6rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 4rem;
+    
+}
+
+.skill {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.skill-discription{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.icon {
+    font-size: 3rem;
+}
+
+.animate-exp {
+    animation: fade-exp 1s forwards;
+}
+
+@media screen and (max-width: 1024px) {
+    .skills {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .skills {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        padding-left: 4rem;
+    }
+
+    
+}
+@media screen and (max-width: 474px) {
+    .skills {
+        padding-left: 3rem;
+        
+    }
+
+    
+}
+
+@keyframes fade-exp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
