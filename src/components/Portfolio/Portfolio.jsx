@@ -56,8 +56,8 @@ const Portfolio = () => {
               <div className="img">
                 <img src={project.thumbnail} alt="" />
                   <div className="project-btns">
-                  <a href={project.link} className="project-btn"> < AiOutlineEye/></a>
-                  <a href={project.live} className="project-btn primary"><BiCodeBlock /></a>
+                  <a href={project.live} className="project-btn"> < AiOutlineEye/></a>
+                  <a href={project.link} className="project-btn primary"><BiCodeBlock /></a>
               </div>
               </div>
               <div className="info">

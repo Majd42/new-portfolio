@@ -164,4 +164,13 @@
     .inner-p {
         display: none;
     }
+    .top-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-content--info{
+        width: 90%;
+        text-align: center;
+    }
+    
 }
